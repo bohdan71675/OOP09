@@ -8,7 +8,17 @@ namespace OOP09
 {
     class Stroj
     {
+        protected string evidencniCislo;
 
+        public string EvidencniCislo
+        {
+            get
+            { return evidencniCislo; }
+            set
+            {
+                evidencniCislo = value;
+            }
+        }
 
 
 
