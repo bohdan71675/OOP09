@@ -19,18 +19,13 @@ namespace OOP09
             set
             {
                 string s = value;
-                if (!char.IsLetter(s[0]) && !char.IsLetter(s[1]))
+                if (!char.IsLetter(s[0]))
                 {
-                    s = s.Insert(0, "A");
-                    s = s.Insert(1, "A");
-                }
-                else if (!char.IsLetter(s[0]))
-                {
-                    s = s.Insert(0, "A");
+                    s = s.Insert(0, "AA");
                 }
                 else if (!char.IsLetter(s[1]))
                 {
-                    s = s.Insert(1, "A");
+                    s = s.Insert(0, "A");
                 }
 
                 evidencniCislo = s;
@@ -67,8 +62,8 @@ namespace OOP09
 
         public override string ToString()
         {
-           return base.ToString() + " Evidencni cislo: " + EvidencniCislo + "  Uveden do provozu: " + UvedenDoProvozu.ToShortDateString()
-                                  + "  Datum posledniho servisu:  " + posledniServis.ToShortDateString();
+           return base.ToString() + "\n Evidencni cislo: " + EvidencniCislo + "\n  Uveden do provozu: " + UvedenDoProvozu.ToShortDateString()
+                                  + "\n  Datum posledniho servisu:  " + posledniServis.ToShortDateString();
         }
     }
 }

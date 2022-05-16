@@ -37,11 +37,11 @@ namespace OOP09
         {
             if (preprogramovan)
             {
-                return base.ToString() + "  BYL PREPROGRAMOVAN  " + "    Byl servisovan " + kolikKratServisovan;
+                return base.ToString() + " \n BYL PREPROGRAMOVAN  " + "  \n  Byl servisovan " + kolikKratServisovan;
             }
             else
             {
-                return base.ToString() + "  NEBYL PREPROGRAMOVAN  " + "    Byl servisovan " + kolikKratServisovan;
+                return base.ToString() + " \n NEBYL PREPROGRAMOVAN  " + "  \n  Byl servisovan " + kolikKratServisovan;
             }
         }
 
